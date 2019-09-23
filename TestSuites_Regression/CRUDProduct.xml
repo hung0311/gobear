@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "CRUDProduct">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "CRUDProduct">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name = "CRUDProduct.ProductAction_Seller"></class>
+			<class name = "CRUDProduct.ValidateProductStatus"></class>
+		</classes>
+	</test>
+</suite>

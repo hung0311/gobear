@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Grid]">
+  <listeners>
+    <listener class-name="ShoppingFlow.objects.RetryListener"/>
+  </listeners>
+  <test name="Grid(failed)">
+    <parameter name="node" value="http://172.30.119.113:5555/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="login.LoginFromMenuBar">
+        <methods>
+          <include name="beforeBaseMethod"/>
+          <include name="beforeBaseClass"/>
+          <include name="C01_LoginFromMenuBar"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- login.LoginFromMenuBar -->
+    </classes>
+  </test> <!-- Grid(failed) -->
+</suite> <!-- Failed suite [Grid] -->

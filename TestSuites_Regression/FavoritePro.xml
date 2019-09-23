@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "FavoritePro">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "FavoritePro">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name = "favorite.FV001_AddFavorite_ProductDetail"></class>
+			<class name = "favorite.FV002_AddFavorite_ShopProductDetail"></class>
+			<class name = "favorite.FV003_AddFavorite_ProductListing"></class>
+			<class name = "favorite.FV004_RemoveFavorite_ListPage"></class>
+			<class name = "favorite.FV005_RemoveFavorite_ProductDetail_Popup"></class>
+			<class name = "favorite.FV006_RemoveFavorite_ProductListing"></class>
+			<class name = "favorite.FV007_RemoveFavorite_ShopProductDetail_Popup"></class>
+		</classes>
+	</test>
+</suite>

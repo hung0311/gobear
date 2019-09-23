@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login">
+	<listeners>
+		<listener class-name="ShoppingFlow.objects.RetryListener" />
+	</listeners>
+	<test name="Login">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name="login.LoginFromMenuBar"></class>
+		</classes>
+	</test>
+</suite>

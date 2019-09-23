@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "OrderFromProductList">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "OrderFromProductList">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="remote" />
+		<parameter name="node" value="172.30.119.113:5555" />
+		<classes>
+			<class name = "order.createOrder.CreateOrderFromProductList_Login_COD"></class>
+			<!-- <class name = "order.createOrder.CreateOrderFromProductList_NotLogin_COD"></class> -->
+			<class name = "order.createOrder.CreateOrderFromProductList_UseVoucher_COD"></class>
+			<class name = "order.createOrder.CreateOrderFromProductList_UseSenpoint_COD"></class>
+			<class name = "order.createOrder.CreateOrderFromProductList_Login_BankTransfer"></class>
+			<class name = "order.createOrder.CreateOrderFromProductList_Login_ATM"></class>
+			<class name = "order.createOrder.CreateOrderFromProductList_Login_Visa"></class>
+		</classes>
+	</test>
+</suite>

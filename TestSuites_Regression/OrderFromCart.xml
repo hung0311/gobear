@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "OrderFromCart">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "OrderFromCart">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="remote" />
+		<parameter name="node" value="172.30.119.113:5555" />
+		<classes>
+			<class name = "order.createOrderByAddingProductToCart.CreateOrderFromShopByAddingMultipleProductToCart_Login_COD"></class>
+			<class name = "order.createOrderByAddingProductToCart.CreateOrderFromShopByAddingProductToCart_Login_COD"></class>
+		</classes>
+	</test>
+</suite>

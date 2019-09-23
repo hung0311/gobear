@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "DefaultListing">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "DefaultListing">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name = "defaultListing.DF001_checkListing_Cate2"></class>
+			<class name = "defaultListing.DF002_checkListing_Cate3"></class>
+			<class name = "defaultListing.DF003_checkListing_Cate2_Brand"></class>
+			<class name = "defaultListing.DF004_checkListing_Cate3_Brand"></class>
+			<class name = "defaultListing.DF005_checkListing_Cate2_FreeShipping"></class>
+			<class name = "defaultListing.DF006_checkListing_Cate3_FreeShipping"></class>
+			<class name = "defaultListing.DF007_checkListing_Cate2_CertifiedShop"></class>
+			<class name = "defaultListing.DF008_checkListing_Cate3_CertifiedShop"></class>
+			<class name = "defaultListing.DF009_checkListing_Cate2_Loyalty"></class>
+			<class name = "defaultListing.DF010_checkListing_Cate3_Loyalty"></class>
+			<class name = "defaultListing.DF011_checkListing_Cate2_Promotion"></class>
+			<class name = "defaultListing.DF012_checkListing_Cate3_Promotion"></class>
+		</classes>
+	</test>
+</suite>

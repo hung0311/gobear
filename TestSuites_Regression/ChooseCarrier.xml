@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "ChooseCarrier">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "ChooseCarrier">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name = "delivery.ValidateChooseDelivery_Checkout_Login"></class>
+			<!-- <class name = "delivery.ValidateChooseDelivery_Checkout_NotLogin"></class> -->
+			<class name = "delivery.ValidateChooseDelivery_ProductDetail_Global"></class>
+			<class name = "delivery.ValidateChooseDelivery_ProductDetail_Shop"></class>
+		</classes>
+	</test>
+</suite>

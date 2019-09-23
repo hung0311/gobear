@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "CartValidation">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "CartValidation">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name = "cart.AddingMultipleProductToCart_Login"></class>
+			<class name = "cart.AddingMultipleProductToCart_notLogin"></class>
+			<class name = "cart.AddingProductToCart_MultipleShop_Login"></class>
+			<class name = "cart.AddingProductToCart_MultipleShop_notLogin"></class>
+			<class name = "cart.AddingSingleProductToCart_Login"></class>
+			<class name = "cart.AddingSingleProductToCart_notLogin"></class>
+			<class name = "cart.RemoveProductFromCart_Login"></class>
+			<class name = "cart.RemoveProductFromCart_notLogin"></class>
+		</classes>
+	</test>
+</suite>

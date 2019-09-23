@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "UpdateOrderFromSeller">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "UpdateOrderFromSeller">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name = "order.Seller.DeleteOrder_Seller"></class>
+			<class name = "order.Seller.DelayOrder_Seller"></class>
+		</classes>
+	</test>
+</suite>

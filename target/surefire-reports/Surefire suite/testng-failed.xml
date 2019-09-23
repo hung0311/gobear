@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="login.LoginFromShop">
+        <methods>
+          <include name="beforeBaseMethod"/>
+          <include name="afterMethodClass"/>
+          <include name="C02_LoginFromShop"/>
+          <include name="beforeBaseClass"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- login.LoginFromShop -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

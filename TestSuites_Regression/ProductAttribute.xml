@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "ProductAttribute">
+	<listeners>
+    	<listener class-name="ShoppingFlow.objects.RetryListener"/>
+	</listeners>
+	<test name = "ProductAttribute">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name = "productAttribute.PA01_ValidateProductAttributeFromShop_NotLogin"></class>
+			<class name = "productAttribute.PA02_ValidateProductAttributeFromProductList_NotLogin"></class>
+			<class name = "productAttribute.PA03_ValidateProductAttributeFromShop_LoginWithEmailAccount"></class>
+			<class name = "productAttribute.PA04_ValidateProductAttributeFromProductList_LoginWithEmailAccount"></class>
+			<class name = "productAttribute.PA05_ValidateProductAttributeFromShop_LoginWithPhoneAccount"></class>
+			<class name = "productAttribute.PA06_ValidateProductAttributeFromProductList_LoginWithPhoneAccount"></class>
+		</classes>
+	</test>
+</suite>

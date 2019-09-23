@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sort">
+	<listeners>
+		<listener class-name="ShoppingFlow.objects.RetryListener" />
+	</listeners>
+	<test name="Sort">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="local" />
+		<parameter name="node" value="" />
+		<classes>
+			<class name="sorting.sorting_Price"></class>
+			<class name="sorting.sorting_Brand"></class>
+			<class name="sorting.sorting_Certified"></class>
+			<class name="sorting.sorting_FreeShipping"></class>
+			<class name="sorting.sorting_Loyalty"></class>
+			<class name="sorting.sorting_Promotion"></class>
+			<!-- <class name = "sorting.sorting_ViewCount"></class> -->
+		</classes>
+	</test>
+</suite>

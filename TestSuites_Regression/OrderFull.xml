@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "OrderFull">
+	<test name = "OrderFull">
+		<parameter name="environment" value="pilot" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="runType" value="remote" />
+		<parameter name="node" value="172.30.119.113:5555" />
+		<classes>
+			<class name = "order.createOrder.CreateOrderFromProductList_COD_Full"></class>
+			<!-- <class name = "order.createOrder.CreateOrderFromProductList_COD_Full_Cleanup"></class> -->
+		</classes>
+	</test>
+</suite>

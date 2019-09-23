@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-09-22T18:11:49Z" name="Default suite" finished-at="2019-09-22T18:12:12Z" duration-ms="23620">
+    <groups>
+      <group name="Travel_Filter">
+        <method signature="TV002_VerifyTravelFilters.TV002_06_VerifyStartDateEndDateFilter()[pri:0, instance:travel.TV002_VerifyTravelFilters@152aa092]" name="TV002_06_VerifyStartDateEndDateFilter" class="travel.TV002_VerifyTravelFilters"/>
+      </group> <!-- Travel_Filter -->
+    </groups>
+    <test started-at="2019-09-22T18:11:49Z" name="Default test" finished-at="2019-09-22T18:12:12Z" duration-ms="23620">
+      <class name="travel.TV002_VerifyTravelFilters">
+        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:travel.TV002_VerifyTravelFilters@152aa092]" started-at="2019-09-23T01:11:49Z" name="beforeSuite" finished-at="2019-09-23T01:11:49Z" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@46cf05f7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeBaseClass(java.lang.String)[pri:0, instance:travel.TV002_VerifyTravelFilters@152aa092]" started-at="2019-09-23T01:11:49Z" name="beforeBaseClass" finished-at="2019-09-23T01:11:49Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NOT_PAR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeBaseClass -->
+        <test-method is-config="true" signature="beforeBaseMethod(java.lang.reflect.Method)[pri:0, instance:travel.TV002_VerifyTravelFilters@152aa092]" started-at="2019-09-23T01:11:49Z" name="beforeBaseMethod" finished-at="2019-09-23T01:11:50Z" duration-ms="1761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void travel.TV002_VerifyTravelFilters.TV002_06_VerifyStartDateEndDateFilter()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeBaseMethod -->
+        <test-method signature="TV002_06_VerifyStartDateEndDateFilter()[pri:0, instance:travel.TV002_VerifyTravelFilters@152aa092]" started-at="2019-09-23T01:11:50Z" name="TV002_06_VerifyStartDateEndDateFilter" description="Verify Filter by Start/End Date is working on Travel page" finished-at="2019-09-23T01:12:12Z" duration-ms="21841" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at automationLibrary.actions.ActionGen.verifyTest(ActionGen.java:301)
+	at travel.TV002_VerifyTravelFilters.TV002_06_VerifyStartDateEndDateFilter(TV002_VerifyTravelFilters.java:183)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TV002_06_VerifyStartDateEndDateFilter -->
+        <test-method is-config="true" signature="afterMethodClass(java.lang.reflect.Method, org.testng.ITestResult, org.testng.ITestContext, java.lang.String)[pri:0, instance:travel.TV002_VerifyTravelFilters@152aa092]" started-at="2019-09-23T01:12:12Z" name="afterMethodClass" finished-at="2019-09-23T01:12:12Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void travel.TV002_VerifyTravelFilters.TV002_06_VerifyStartDateEndDateFilter()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=TV002_06_VerifyStartDateEndDateFilter status=FAILURE method=TV002_VerifyTravelFilters.TV002_06_VerifyStartDateEndDateFilter()[pri:0, instance:travel.TV002_VerifyTravelFilters@152aa092] output={null}]]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@46cf05f7]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NOT_PAR]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodClass -->
+        <test-method is-config="true" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:travel.TV002_VerifyTravelFilters@152aa092]" started-at="2019-09-23T01:12:12Z" name="afterSuite" finished-at="2019-09-23T01:12:12Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@46cf05f7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- travel.TV002_VerifyTravelFilters -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
