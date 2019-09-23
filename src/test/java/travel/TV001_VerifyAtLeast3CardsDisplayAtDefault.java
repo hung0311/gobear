@@ -17,7 +17,7 @@ public class TV001_VerifyAtLeast3CardsDisplayAtDefault extends TestBase {
 	 * Expected Result:
 	 * 	- Verify there are 3 cards displaying at least	 
 	 */
-	public void CO016_01_CreateOrderAndVerifyOrderInBuyer() {
+	public void TV001_VerifyAtLeast3CardsDisplayAtDefault {
 		// Declare variables
 		int numberDisplayedCard = 0;
 		
